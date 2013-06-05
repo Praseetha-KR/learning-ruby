@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
 #############################################################
-#	Application: Client-server blocking I/O (simple-demo)   #
+#   Application: Client-server blocking I/O (simple-demo)   #
 #   Compiler   : Ruby 2.0.0p0                               #
 #############################################################
 
@@ -36,6 +36,9 @@ class RequestReply
 end
 
 if __FILE__ == $0
+	puts "Client-server blocking I/O demo:\n"
+	puts "---------------------------------\n"
+
 	rr = RequestReply.new
 	rr.request
 	rr.reply
